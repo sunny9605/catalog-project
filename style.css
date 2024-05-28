@@ -1,0 +1,358 @@
+*{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+}
+
+:root{
+    --color:#07b192;
+}
+
+.whole_page{
+    height: 100vh;
+}
+
+/* ------ Nav bar------- */
+
+.nav_bar{
+
+    width: 100%;
+    height: 2.5rem;
+    background-color: white;
+    position: fixed;
+    top: 0%;
+    z-index: 1;
+
+}
+
+.logo{
+    display: inline-block;
+    padding: 6px 40px;
+    font-size: 1.3rem;
+    color: var(--color);
+}
+
+.logo i{
+    font-size: 1.5rem;
+    padding-right: 8px;
+}
+
+
+.links{
+    float: right;
+    font-family: Nanum Myeongjo  serif;
+    opacity: 0.8;
+    
+    
+}
+
+
+.links_active{
+    padding-bottom: 3px;
+    border-bottom: 3px solid rgb(253, 175, 30);
+
+}
+
+.links ul{
+    list-style: none;
+    display: flex;
+    padding: 6px 50px;
+    /* margin-right: 2rem; */
+    font-size: 1.2rem;
+
+    
+}
+.links li{
+    margin-left: 1.5rem;
+    transition: all 0.1s  ease-in-out;
+    
+   
+}
+
+.links a{
+    text-decoration: none;
+    color: black;
+}
+
+.links li:hover{
+    cursor: pointer;
+    padding-bottom: 3px;
+    border-bottom: 3px solid rgb(253, 175, 30);
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+/* -----hero img and search bar----- */
+
+.header{
+    width: 100%;
+    height: 280px;
+    background-image: url(./img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 40px;
+
+}
+
+.search_bar{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    
+}
+
+.search_input{
+    width: 220px;
+    height: 35px;
+    padding: 5px 6px;
+    vertical-align: top;
+    border: none;
+    outline: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.search{
+    background-color: var(--color);
+    padding: 10px 17px;
+    width: 50px;
+    height: 35px;
+    color: white;
+    border: none;
+    outline: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+
+
+
+::placeholder{
+    color:  var(--color) ;
+}
+
+
+/* -------main ------ */
+
+.main{
+padding: 40px;
+color: var(--color);
+}
+
+.main h2{
+    display: inline-block;
+}
+
+.main span{
+    float: right;
+}
+
+.main button{
+    padding: 3px 2px;
+    color: var(--color);
+}
+
+
+.main_vid{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img_one{
+    height: 230px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    
+}
+
+.img_one_text1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: rgb(137, 139, 141);
+}
+
+.img_one_text2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: rgb(189, 193, 196);
+    
+}
+
+.pages{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.pages a{
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    vertical-align: top;
+    color: rgb(205, 205, 209);
+    
+}
+
+.pages ul{
+    list-style: none;
+    display: flex;
+}
+
+
+
+.pages button{
+    background-color: var(--color);
+    border: none;
+    border-radius: 12px;
+    padding:10px 20px;
+    color: white;
+}
+
+.pages .Previous{
+    opacity: 0.6;
+
+}
+.pages .button {
+    color: white;
+}
+
+
+
+
+.active{
+    background-color: var(--color);
+    color: rgb(221, 215, 215);
+    padding: 5px 10px;
+    cursor: pointer;
+    vertical-align: top;
+}
+
+
+.non_active{
+
+    background-color: gainsboro;
+    color: rgb(199, 199, 202);
+    padding: 5px 10px;
+    cursor: pointer;
+    vertical-align: top;
+
+}
+.pages li{
+
+    font-size: 1.3rem;
+    vertical-align: top;
+}
+
+.pages li:hover{
+    color: rgb(61, 58, 58);
+    cursor: pointer;
+}
+
+
+/* ---footer------ */
+
+
+.footer{
+    height: -1vh;
+    width: 100%;
+    display: flex;
+    background-color: rgb(214, 213, 212);
+    padding: 30px;
+    justify-content: space-around;
+    color: rgb(121, 124, 126) ;
+    
+}
+
+.footer h2{
+    text-align: center;
+    color: var(--color);
+}
+
+.about_catalog{
+    height: 300px;
+    width: 380px;
+    line-height: 1.6rem;
+    /* border: 1px solid; */
+    position: relative;
+}
+
+
+.our_links{
+    height: 300px;
+    width: 300px;
+    font-size: 1.1rem;
+    /* border: 1px solid; */
+}
+
+.our_links ul{
+    display: block;
+    line-height: 3rem;
+text-align: center;
+list-style: none;
+
+}
+
+
+.terms{
+    height: 300px;
+    width: 300px;
+    line-height: 1.6rem;
+    /* border: 1px solid; */
+    position: relative;
+
+}
+
+.first_text{
+    padding-top: 30px;
+}
+
+.last_text{
+    position: absolute;
+    bottom: 0;
+   
+
+
+}
+
+.terms i{
+background-color: rgb(228, 221, 214);
+padding: 10px;
+/* margin-left: 20px; */
+margin-top: 10px;
+}
+
+
+.terms ul{
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    line-height: 40px;
+    font-size: 1.1rem;
+    padding: 0 0;
+    list-style: none;
+}
+
+.mid_text{
+
+    position: absolute;
+    margin-top: 10px;
+    top: 20%;
+}
+
+
+
+
+
